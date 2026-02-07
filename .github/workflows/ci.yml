@@ -1,4 +1,4 @@
-name: CI -COMP2156 DevOps Lab Workflow
+name: CI -COMP2156 DevOps Lab Workflow Update
 on:
   push:
     branches: ["main"]
