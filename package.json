@@ -8,7 +8,7 @@
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\"",
     "eject": "react-scripts eject"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nanasg84/comp2156.git"
@@ -16,12 +16,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/nanasg84/comp2156/issues"
   },
-  "homepage": "https://github.com/nanasg84/comp2156#readme",
- 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -42,8 +39,11 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
-
   }
-
 }
