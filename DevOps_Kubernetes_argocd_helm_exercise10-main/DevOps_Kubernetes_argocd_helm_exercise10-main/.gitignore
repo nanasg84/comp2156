@@ -1,0 +1,30 @@
+# Terraform
+terraform-azure/.terraform/
+terraform-azure/.terraform.tfstate.lock.info
+
+# State and backup files
+terraform-azure/terraform.tfstate
+terraform-azure/terraform.tfstate.backup
+terraform-azure/*.tfstate
+terraform-azure/*.tfstate.*.backup
+
+# Crash log files
+terraform-azure/crash.log
+terraform-azure/crash.*.log
+
+# Ignore variable files that might contain secrets
+terraform-azure/*.tfvars
+terraform-azure/*.tfvars.json
+
+# Ignore override files
+terraform-azure/override.tf
+terraform-azure/override.tf.json
+terraform-azure/*_override.tf
+terraform-azure/*_override.tf.json
+
+# Ignore plan files
+terraform-azure/*tfplan*
+
+# Ignore CLI configuration files
+terraform-azure/.terraformrc
+terraform-azure/terraform.rc

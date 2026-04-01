@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: flask-redis-app
+  namespace: argocd       # Argo CD's namespace (default install)
+spec:
+  project: default        # or your custom Argo CD project
+  source:
+    repoURL: 'https://github.com/pritamworld/DevOps_Kubernetes_exercise10.git'
+    targetRevision: main          # branch, tag, or commit
+    path: k8s                      # folder in the repo with your manifests
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default             # where to deploy the app
+  syncPolicy:
+    automated:
+      prune: true                  # delete resources removed from git
+      selfHeal: true               # fix drift automatically
+    syncOptions:
+      - CreateNamespace=false      # set true if you change destination namespace
